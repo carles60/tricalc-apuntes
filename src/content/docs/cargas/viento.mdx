@@ -4,11 +4,53 @@ description: "Notas sobre la definición de cargas de viento en Tricalc"
 ---
 
 
+import {Image} from 'astro:assets';
+import imagenviento from '../../../assets/cargas/imagenviento.png';
+
+<Image
+src={imagenviento}
+alt="Cargas de viento"
+/>
+
+## Acciones consideradas
+
+| Acción | Hipótesis | Estado |
+|---------|-----------|--------|
+| Peso propio | PP | ✅ |
+| Sobrecarga | SC | ✅ |
+| Viento X | VX | ✅ |
+| Viento Y | VY | ❌ |
+| Nieve | NV | ✅ |
+
+
+
+## Prueba de tabla
+
+| Columna 1 | Columna 2 |
+|------------|------------|
+| Uno | Dos |
+| Tres | Cuatro |
+
 
 En esta página recopilo mis notas sobre la introducción y gestión de las cargas de viento en Tricalc.
 
-## Observaciones
+## Concepto general
 
-- Pendiente de completar con ejemplos reales.
-- Añadir capturas de pantalla cuando documente un caso práctico.
-- Anotar los valores y criterios utilizados.
+El viento se considera una acción variable que puede afectar de forma significativa al comportamiento de la estructura.
+
+## Procedimiento en Tricalc
+
+1. Definir la hipótesis correspondiente.
+2. Introducir los parámetros necesarios.
+3. Generar las cargas sobre la estructura.
+4. Revisar los resultados obtenidos.
+
+## Observaciones personales
+
+
+> Pendiente de completar con ejemplos reales de modelos calculados.
+
+## Errores frecuentes
+
+- No revisar correctamente la dirección de aplicación.
+- Confundir hipótesis simples con combinaciones.

@@ -1,0 +1,108 @@
+---
+title: "GitHub"
+description: "Operaciones habituales con GitHub"
+sidebar:
+  order: 2
+---
+
+# GitHub
+
+## Clonar un repositorio
+
+### Código
+
+```bash
+git clone https://github.com/usuario/repositorio.git
+```
+
+### Observaciones
+
+Crea una copia local del repositorio remoto.
+
+---
+
+## Conectar un repositorio local con GitHub
+
+### Código
+
+```bash
+git remote add origin https://github.com/usuario/repositorio.git
+```
+
+### Observaciones
+
+Asocia el proyecto local con un repositorio existente en GitHub.
+
+---
+
+## Comprobar el repositorio remoto
+
+### Código
+
+```bash
+git remote -v
+```
+
+### Observaciones
+
+Muestra los repositorios remotos asociados al proyecto.
+
+---
+
+## Primer envío al repositorio
+
+### Código
+
+```bash
+git branch -M main
+git push -u origin main
+```
+
+### Observaciones
+
+Publica la rama principal y establece el seguimiento con el repositorio remoto.
+
+---
+
+## Envíos posteriores
+
+### Código
+
+```bash
+git push
+```
+
+### Observaciones
+
+Envía los nuevos commits al repositorio remoto.
+
+---
+
+## Descargar cambios
+
+### Código
+
+```bash
+git pull
+```
+
+### Observaciones
+
+Descarga e integra los cambios realizados en GitHub.
+
+---
+
+## Flujo de trabajo habitual
+
+### Código
+
+```bash
+git status
+git add .
+git commit -m "Descripción de los cambios"
+git push
+```
+
+### Observaciones
+
+Secuencia habitual para actualizar un proyecto en GitHub.

@@ -1,0 +1,134 @@
+---
+title: "VS Code: Generalidades"
+description: "Entorno de desarrollo"
+sidebar:
+  order: 1
+---
+
+# Visual Studio Code
+
+## Abrir un proyecto
+
+### Resultado
+
+Abrir la carpeta raíz del proyecto.
+
+### Observaciones
+
+No debe abrirse una subcarpeta, sino la carpeta principal que contiene:
+
+- `package.json`
+- `astro.config.mjs`
+- `src`
+- `public`
+
+---
+
+## Abrir una terminal
+
+### Resultado
+
+Menú:
+
+**Terminal → New Terminal**
+
+### Atajo
+
+```text
+Ctrl + Ñ
+```
+
+---
+
+## Iniciar el servidor de desarrollo
+
+### Código
+
+```bash
+npm run dev
+```
+
+### Observaciones
+
+Inicia Astro en modo desarrollo.
+
+---
+
+## Detener el servidor
+
+### Atajo
+
+```text
+Ctrl + C
+```
+
+---
+
+## Reiniciar el servidor
+
+### Código
+
+```bash
+npm run dev
+```
+
+### Observaciones
+
+Es recomendable reiniciar el servidor cuando:
+
+- Se crean nuevas carpetas.
+- Se crean nuevos archivos `.md` o `.mdx`.
+- Se modifica `astro.config.mjs`.
+- El menú lateral no se actualiza correctamente.
+
+---
+
+## Extensiones recomendadas
+
+- Astro
+- MDX
+- Prettier
+- GitHub Pull Requests
+- Error Lens
+
+---
+
+## Problemas habituales
+
+### Los cambios no aparecen
+
+1. Detener el servidor.
+
+```bash
+Ctrl + C
+```
+
+2. Volver a iniciarlo.
+
+```bash
+npm run dev
+```
+
+---
+
+### El menú lateral no se actualiza
+
+Cerrar Visual Studio Code.
+
+Volver a abrir el proyecto.
+
+Ejecutar:
+
+```bash
+npm run dev
+```
+
+---
+
+### Error tras modificar la estructura del proyecto
+
+Comprobar:
+
+- `astro.config.mjs`
+- Frontmatter de las nuevas páginas.
+- Que exista un `index.mdx` cuando sea necesario.

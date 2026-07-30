@@ -1,0 +1,49 @@
+---
+title: "Tablas"
+description: "Creación de tablas en Markdown"
+sidebar:
+  order: 4
+---
+
+## Resultado
+
+| Acción | Hipótesis | Estado |
+|---------|-----------|:------:|
+| Peso propio | PP | ✅ |
+| Sobrecarga | SC | ✅ |
+| Viento X | VX | ✅ |
+| Viento Y | VY | ❌ |
+| Nieve | NV | ✅ |
+
+---
+
+## Código
+
+```md
+| Acción | Hipótesis | Estado |
+|---------|-----------|:------:|
+| Peso propio | PP | ✅ |
+| Sobrecarga | SC | ✅ |
+| Viento X | VX | ✅ |
+| Viento Y | VY | ❌ |
+| Nieve | NV | ✅ |
+```
+
+---
+
+## Observaciones
+
+- La primera fila contiene los encabezados.
+- La segunda fila define la alineación de las columnas.
+- Los caracteres `|` separan las columnas.
+- La fila de separación debe contener al menos tres guiones (`---`) por columna.
+- La alineación se controla con los dos puntos (`:`):
+
+| Sintaxis | Alineación |
+|-----------|------------|
+| `---` | Izquierda |
+| `:---` | Izquierda |
+| `---:` | Derecha |
+| `:---:` | Centrada |
+
+- En un teclado español, el carácter `|` se escribe con **Alt Gr + 1**.

@@ -1,0 +1,50 @@
+---
+title: "Vídeos"
+description: "Inserción de vídeos de YouTube"
+sidebar:
+  order: 2
+---
+
+### Resultado
+
+<div style="max-width:800px;">
+  <iframe
+    src="https://www.youtube.com/embed/F97lpavDD9U"
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    allowfullscreen>
+  </iframe>
+</div>
+
+---
+
+### Código
+
+```html
+<div style="max-width:800px;">
+  <iframe
+    src="https://www.youtube.com/embed/F97lpavDD9U"
+    width="100%"
+    style="aspect-ratio: 16 / 9;"
+    allowfullscreen>
+  </iframe>
+</div>
+```
+
+---
+
+### Observaciones
+
+- Sustituir `F97lpavDD9U` por el identificador del vídeo.
+- Utilizar siempre la dirección `https://www.youtube.com/embed/...`.
+- `width="100%"` adapta el vídeo al ancho disponible.
+- `aspect-ratio: 16 / 9` mantiene automáticamente la proporción correcta.
+- `max-width:800px` limita el ancho máximo del reproductor.
+
+:::tip[Experiencia]
+
+Inicialmente se intentó modificar únicamente la altura (`height`) del `<iframe>`, pero no funcionó correctamente.
+
+La solución definitiva fue utilizar la propiedad CSS `aspect-ratio`.
+
+:::

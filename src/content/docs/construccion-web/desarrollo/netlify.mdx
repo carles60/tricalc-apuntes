@@ -1,0 +1,67 @@
+---
+title: "Netlify"
+description: "Publicación de una web con Netlify"
+sidebar:
+  order: 3
+---
+
+# Netlify
+
+## Crear una cuenta
+
+1. Acceder a https://www.netlify.com.
+2. Iniciar sesión con la cuenta de GitHub.
+
+---
+
+## Crear un nuevo sitio
+
+1. Seleccionar **Add new site**.
+2. Elegir **Import an existing project**.
+3. Seleccionar **GitHub**.
+4. Autorizar el acceso a GitHub si es necesario.
+5. Elegir el repositorio.
+
+---
+
+## Configuración de la compilación
+
+### Build command
+
+```text
+npm run build
+```
+
+### Publish directory
+
+```text
+dist
+```
+
+---
+
+## Publicar la web
+
+Pulsar **Deploy site**.
+
+Netlify descargará el proyecto, instalará las dependencias y publicará automáticamente la web.
+
+---
+
+## Actualizar la web
+
+Cada vez que se haga:
+
+```bash
+git push
+```
+
+Netlify detectará el cambio y volverá a publicar automáticamente la web.
+
+---
+
+## Observaciones
+
+- No es necesario volver a publicar manualmente.
+- Cada `git push` genera un nuevo despliegue.
+- Si la compilación falla, Netlify muestra el registro completo de errores.
