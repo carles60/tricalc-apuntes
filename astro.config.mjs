@@ -10,38 +10,154 @@ export default defineConfig({
 			//social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: 'Modelado',
-					items: [{ autogenerate: { directory: 'modelado' } }],
-				},
-				{
-                	label: 'Cargas',
-  					items: [{ autogenerate: { directory: 'cargas' } }],
-				},
-				{
-  					label: 'Construcción web',
-  					items: [
+					label: 'CONFIGURACIÓN',
+					items: [
     					{
-      						label: 'Markdown',
+      						label: 'Archivos',
       						items: [
-        						{ autogenerate: { directory: 'construccion-web/markdown' } },
+        						{ autogenerate: { directory: 'configuracion' } },
       						],
     					},
-						    					{
-      						label: 'MDX',
+						{
+      						label: 'Interfaz',
       						items: [
-        						{ autogenerate: { directory: 'construccion-web/mdx' } },
+        						{ autogenerate: { directory: 'configuracion' } },
       						],
     					},
     					{
-      						label: 'Desarrollo',
+      						label: 'Dibujos .dwg',
       						items: [
-        						{ autogenerate: { directory: 'construccion-web/desarrollo' } },
+        						{ autogenerate: { directory: 'configuracion' } },
+      						],
+   						 },
+					],	
+				},
+				{
+					label: 'GEOMETRÍA',
+					items: [
+    					{
+      						label: 'Nudos',
+      						items: [
+        						{ autogenerate: { directory: 'geometria' } },
+      						],
+    					},
+						{
+      						label: 'Barras',
+      						items: [
+        						{ autogenerate: { directory: 'geometria' } },
+      						],
+    					},
+    					{
+      						label: 'Pórticos',
+      						items: [
+        						{ autogenerate: { directory: 'geometria' } },
       						],
    						 },
 						 {
-      						label: 'Visual Studio Code',
+      						label: 'Mallas',
       						items: [
-        						{ autogenerate: { directory: 'construccion-web/visual-studio-code' } },
+        						{ autogenerate: { directory: 'geometria' } },
+      						],
+   						 },
+						 {
+      						label: 'Naves',
+      						items: [
+        						{ autogenerate: { directory: 'geometria' } },
+      						],
+   						 },
+					],	
+				},
+				{
+					label: 'SECCIONES',
+					items: [
+    					{
+      						label: 'de Acero',
+      						items: [
+        						{ autogenerate: { directory: 'secciones' } },
+      						],
+    					},
+						{
+      						label: 'de Hormigón',
+      						items: [
+        						{ autogenerate: { directory: 'secciones' } },
+      						],
+    					},
+    					{
+      						label: 'de Aluminio',
+      						items: [
+        						{ autogenerate: { directory: 'secciones' } },
+      						],
+   						 },
+						 {
+      						label: 'de Madera',
+      						items: [
+        						{ autogenerate: { directory: 'secciones' } },
+      						],
+   						 },
+					],	
+				},
+				{
+					label: 'COMPONENTES',
+					items: [
+    					{
+      						label: 'Cimentaciones',
+      						items: [
+        						{ autogenerate: { directory: 'componentes' } },
+      						],
+    					},
+						{
+      						label: 'Forjados',
+      						items: [
+        						{ autogenerate: { directory: 'componentes' } },
+      						],
+    					},
+    					{
+      						label: 'Muros de sótano',
+      						items: [
+        						{ autogenerate: { directory: 'componentes' } },
+      						],
+   						 },
+						 {
+      						label: 'Muros resistentes',
+      						items: [
+        						{ autogenerate: { directory: 'componentes' } },
+      						],
+   						 },
+						 {
+      						label: 'Muros pantalla',
+      						items: [
+        						{ autogenerate: { directory: 'componentes' } },
+      						],
+   						 },
+					],	
+				},
+				{
+                	label: 'CARGAS',
+  					items: [{ autogenerate: { directory: 'cargas' } }],
+				},
+				{
+                	label: 'CÁLCULO',
+  					items: [{ autogenerate: { directory: 'calculo' } }],
+				},
+				{
+  					label: 'RESULTADOS',
+  					items: [
+    					{
+      						label: 'Gráficas',
+      						items: [
+        						{ autogenerate: { directory: 'resultados' } },
+      						],
+    					},
+						    					{
+      						label: 'Listados',
+      						items: [
+        						{ autogenerate: { directory: 'resultados' } },
+      						],
+    					},
+    					{
+      						label: 'Planos',
+      						items: [
+        						{ autogenerate: { directory: 'resultados' } },
       						],
    						 },
  					 ],
