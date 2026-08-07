@@ -169,6 +169,18 @@ export default defineConfig({
    						 },
  					 ],
 				},
+				{
+  					label: 'TUTORIALES',
+					collapsed: true, // <--- Hace que esta carpeta aparezca replegada
+  					items: [
+    					{
+      						label: 'por Graitec',
+      						items: [
+        						{ autogenerate: { directory: 'tutoriales/graitec' } },
+      						],
+    					},
+ 					 ],
+				},
 			],
 		}),
 	],
